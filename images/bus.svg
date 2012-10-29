@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="81.59px" height="99.992px" viewBox="0 0 81.59 99.992" enable-background="new 0 0 81.59 99.992" xml:space="preserve">
+
+<defs>
+	<style type="text/css">
+	   <![CDATA[
+	    @font-face {
+	        font-family: 'DINProBold';
+	        src: url('file:///Users/grahamb/code/sfu/nextbus/fonts/dinpro-bold-webfont.eot');
+	        src: url('file:///Users/grahamb/code/sfu/nextbus/fonts/dinpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	             url('file:///Users/grahamb/code/sfu/nextbus/fonts/dinpro-bold-webfont.woff') format('woff'),
+	             url('file:///Users/grahamb/code/sfu/nextbus/fonts/dinpro-bold-webfont.ttf') format('truetype'),
+	             url('file:///Users/grahamb/code/sfu/nextbus/fonts/dinpro-bold-webfont.svg#DINProBold') format('svg');
+	        font-weight: normal;
+	        font-style: normal;
+	    }
+		]]>
+	</style>
+</defs>
+<path d="M68.848,68.51"/>
+<path d="M12.687,68.51"/>
+<g>
+	<path fill="#4D4D4D" d="M77.619,14.775c-1.098-5.528-4.622-7.731-9.932-9.93C62.499,2.668,50.02,0.079,40.794,0
+		c-9.243,0.079-21.722,2.668-26.948,4.846c-5.271,2.199-8.795,4.402-9.875,9.93L0,45.284v42.091h6.84v6.564
+		c-0.027,8.07,11.745,8.07,11.75,0v-6.564h21.737h0.054H63v6.564c-0.014,8.07,11.759,8.07,11.75,0v-6.564h6.84V45.284L77.619,14.775
+		z M23.996,7.715h16.385h17.212c3.286-0.009,3.286,4.949,0,4.965H40.327H23.996C20.694,12.664,20.694,7.706,23.996,7.715z
+		 M12.687,74.191c-3.101-0.016-5.631-2.543-5.627-5.683c-0.004-3.099,2.526-5.627,5.627-5.627c3.136,0,5.665,2.528,5.683,5.627
+		C18.352,71.648,15.823,74.177,12.687,74.191z M40.381,48.482H10.426c-2.925,0.028-3.54-2.081-3.253-4.192l3.088-22.177
+		c0.425-2.67,1.336-4.443,4.854-4.468h25.213h26.148c3.498,0.025,4.412,1.797,4.854,4.468l3.09,22.177
+		c0.267,2.112-0.349,4.22-3.256,4.192H40.381z M68.848,74.191c-3.1-0.016-5.627-2.543-5.627-5.683c0-3.099,2.527-5.627,5.627-5.627
+		c3.137,0,5.668,2.528,5.682,5.627C74.516,71.648,71.984,74.177,68.848,74.191z"/>
+	<path fill="#4D4D4D" d="M40.381-0.007c0.135,0,0.277,0.006,0.414,0.007c0.137-0.001,0.278-0.007,0.414-0.007H40.381z"/>
+</g>
+<text id="busnumber" transform="matrix(1 0 0 1 9.6587 46.6733)" font-family='DINProBold' font-size="37">145</text>
+</svg>
