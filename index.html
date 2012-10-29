@@ -8,13 +8,21 @@
     <script src="js/vendor/jquery.min.js"></script>
     <link rel="stylesheet" href="css/base.css">
     <style type="text/css">
+
+        .group:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
         nav {
-            max-width: 25%;
+            width: 30%;
+            float: left;
             background-color: #e9eef3;
         }
 
-        nav ul>li {
-            font: 15px/30px "DINProRegular", sans-serif;
+        nav li {
+            font: 15px/35px "DINProRegular", sans-serif;
             text-transform: uppercase;
             padding: 20px;
         }
@@ -23,7 +31,39 @@
             background-color: #CBD7E3;
         }
 
+        .buslist {
+            margin-left: 30px;
+            width: 65%;
+            float: left;
+        }
 
+        .bus {
+            padding-left: 120px;
+            min-height: 100px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            background: url(./images/busses.png) no-repeat top left;
+        }
+
+        .bus:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .nextbus {
+            font: 50px/55px "DINProMedium", sans-serif;
+            color: #4d4d35;
+        }
+
+        .subsequentbusses {
+            font: 25px "DINProRegular", sans-serif;
+            color: #808080;
+        }
+
+        .bus_135{ background-position: 0 0; }
+        .bus_143{ background-position: 0 -110px; }
+        .bus_144{ background-position: 0 -220px; }
+        .bus_145{ background-position: 0 -330px; }
+        .bus_n35{ background-position: 0 -440px; }
 
     </style>
 
