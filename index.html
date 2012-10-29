@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Road and Traffic Report – Burnaby Campus – Simon Fraser University</title>
+    <script src="js/vendor/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <style type="text/css">
+        nav {
+            max-width: 25%;
+            background-color: #e9eef3;
+        }
+
+        nav ul>li {
+            font: 15px/30px "DINProRegular", sans-serif;
+            text-transform: uppercase;
+            padding: 20px;
+        }
+
+        .active-stop {
+            background-color: #CBD7E3;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="banner">
+            <a href="//www.sfu.ca">Simon Fraser University</a>
+        </div>
+
+        <div id="globalNav">
+                <ul id="campuses">
+                    <li class="sfu"><a href="//www.sfu.ca">sfu.ca</a></li>
+                    <li><a href="http://www.burnaby.sfu.ca">Burnaby</a></li>
+                    <li><a href="http://www.surrey.sfu.ca/">Surrey</a></li>
+
+                    <li class="last"><a href="http://www.vancouver.sfu.ca/">Vancouver</a></li>
+                </ul>
+
+                <ul id="services">
+                    <li class="dropdown" id="online">
+                        <a class="tabs" href="//www.sfu.ca/onlineservices/">SFU Online</a>
+                        <ul id="onlineServices"></ul>
+                    </li>
+                    <li class="dropdown" id="directory">
+                        <a class="tabs" href="//www.sfu.ca/dir/">A-Z Links</a>
+                        <ul id="AtoZ"></ul>
+                    </li>
+                    <li class="last" id="search">
+                      <form action="//www.sfu.ca/search.html" class="search" method="GET">
+                            <input id="s" name="q" type="text" placeholder="Search sfu.ca"/>
+                            <span class="button"><input id="submit" type="submit" value="Search"/></span>
+                      </form>
+                    </li>
+                </ul>
+        </div>
+        <div id="content">
+            <div id="title">
+                <h1><span>Burnaby Mountain Campus</span><br />
+                Next Bus Departures</h1>
+            </div>
+            <div>
+                <nav style="float:left">
+                    <ul>
+                        <li class="active-stop">East Campus Transit Exchange</li>
+                        <li>Tower Road</li>
+                        <li>South Campus Road</li>
+                        <li>Transportation Centre</li>
+                        <li>University Drive West</li>
+                    </ul>
+                </nav>
+                <div style="float:left">
+                    <h2>145</h2>
+                    <ul>
+                        <li class="nextbus">2 minutes</li>
+                        <ul>
+                            <li>6, 8, 10, 15 minutes</li>
+                        </ul>
+                    </ul>
+
+                    <h2>145</h2>
+                    <ul>
+                        <li class="nextbus">2 minutes</li>
+                        <ul>
+                            <li>6, 8, 10, 15 minutes</li>
+                        </ul>
+                    </ul>
+
+                    <h2>145</h2>
+                    <ul>
+                        <li class="nextbus">2 minutes</li>
+                        <ul>
+                            <li>6, 8, 10, 15 minutes</li>
+                        </ul>
+                    </ul>
+
+                    <h2>145</h2>
+                    <ul>
+                        <li class="nextbus">2 minutes</li>
+                        <ul>
+                            <li>6, 8, 10, 15 minutes</li>
+                        </ul>
+                    </ul>
+
+                    <h2>145</h2>
+                    <ul>
+                        <li class="nextbus">2 minutes</li>
+                        <ul>
+                            <li>6, 8, 10, 15 minutes</li>
+                        </ul>
+                    </ul>
+
+                    <h2>145</h2>
+                    <ul>
+                        <li class="nextbus">2 minutes</li>
+                        <ul>
+                            <li>6, 8, 10, 15 minutes</li>
+                        </ul>
+                    </ul>
+
+                    <h2>145</h2>
+                    <ul>
+                        <li class="nextbus">2 minutes</li>
+                        <ul>
+                            <li>6, 8, 10, 15 minutes</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <ul>
+            <li>8888 University Drive, Burnaby, B.C. Canada V5A 1S6</li>
+            <li><a href="http://www.sfu.ca/webmaster/terms.html">Terms / Privacy</a></li>
+            <li><a href="http://www.sfu.ca/contact/index.html">Contact SFU</a></li>
+            <li><a href="http://www.sfu.ca/about/sitemap.html">SiteMap</a></li>
+            <li><a href="http://www.sfu.ca/security/sfuroadconditions/">Road Conditions</a></li>
+
+            <li>&copy; Simon Fraser University</li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+        var atoz = function() {
+            var html = [], letter;
+            for (var z=65; z<91; z++) {
+                letter = String.fromCharCode(z+32);
+                html.push('<li><a href="http://www.sfu.ca/dir/?' + letter + '">' + letter + '</a>');
+            }
+            $('#AtoZ').html(html.join(''));
+        };
+
+        var onlineservices = function() {
+            var html = []
+            ,   onlineservices = [
+                {"label":"SFU Connect + mySFU","link":"http://connect.sfu.ca"},
+                {"label":"Alumni Mail","link":"http://www.sfu.ca/alumni/emailforwarding/"},
+                {"label":"Student Information System","link":"http://go.sfu.ca"}
+            ];
+
+            for (var i = 0; i < onlineservices.length; i++) {
+                html.push('<li><a href="' + onlineservices[i].link + '">' + onlineservices[i].label + '</a></li>');
+            };
+            $('#onlineServices').html(html.join(''));
+        };
+
+        atoz();
+        onlineservices();
+    </script>
+    <script type="text/javascript" src="js/menus.js"></script>
+    <script>
+        if (window.innerWidth <= 320) {
+            window.scrollTo(0, 65);
+        }
+    </script>
+</body>
+</html>
