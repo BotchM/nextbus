@@ -89,6 +89,7 @@
 
             <li>&copy; Simon Fraser University</li>
         </ul>
+        <a href="http://thenounproject.com/noun/bus/#icon-No3743" target="_blank">Bus</a> designed by <a href="http://thenounproject.com/filippo.camedda" target="_blank">Filippo Camedda</a> from The Noun Project
     </div>
 
     <script type="text/javascript">
@@ -120,6 +121,7 @@
     </script>
     <script type="text/javascript" src="js/menus.js"></script>
     <script>
+    $('nav .group').on('click', function() { $('nav .group').removeClass('active-stop'); $(this).addClass('active-stop'); })
         if (window.innerWidth <= 320) {
             window.scrollTo(0, 65);
         }
