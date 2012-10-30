@@ -372,14 +372,14 @@ h4 {
 /* Content Area */
 
 #content {
-    padding: 0px 65px 40px 65px;
+    padding: 0px 65px 40px 25px;
     float: left;
 }
 
 #title {
     border-left: 25px solid #E9EEF3;
     width: 907px;
-    margin: 0px 0px 42px -65px;
+    margin: 0px 0px 42px -25px;
     padding: 28px 8px 4px 40px;
     background-color: #CBD7E3;
 }
@@ -521,5 +521,3 @@ h4 {
         font-size: 20px;
     }
 }
-
-
