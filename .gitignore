@@ -3,3 +3,4 @@
 *.pdf
 stops.txt
 locations.json
+*.DS_Store
