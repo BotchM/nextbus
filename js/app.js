@@ -63,6 +63,10 @@ var nextbus = (function($){
         save_stop_as_default: true
     };
 
+    var templates = {
+        busicon: document.getElementById('busicontmpl').innerHTML,
+        busitem: document.getElementById('busitemtmpl').innerHTML
+    };
 
     // settings
     var loadSettings = function() {
