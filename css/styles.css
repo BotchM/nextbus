@@ -6,9 +6,11 @@
     height: 0;
 }
 
+
 hr.soften {
   height: 1px;
   margin: 20px auto;
+  background-color: #ccc;
   background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
   background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
   background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
@@ -49,7 +51,7 @@ nav li:hover {
     width: 0px;
     height: 0px;
     border-style: solid;
-    border-width: 38px 0 39px 35px;
+    border-width: 38px 0 37px 35px;
     border-color: transparent transparent transparent #cbd7e3;
 }
 
@@ -61,15 +63,34 @@ nav li:hover {
 }
 
 .bus {
-    padding-left: 120px;
     min-height: 100px;
     text-transform: uppercase;
     margin-bottom: 30px;
-    background: url(../images/busses.png) no-repeat top left;
+}
+
+.bus .group div {
+    float:left;
+}
+
+.bus span {
+    display: block;
+}
+
+.busicon {
+    float:left;
+    padding-right: 20px
 }
 
 .bus:last-of-type {
     margin-bottom: 0;
+}
+
+.busnumber {
+    display:inline;
+    font:36px 'DINProRegular', sans-serif;
+    margin-left: 40px;
+    margin-right:40px;
+    text-transform: lowercase;
 }
 
 .nextbus {
@@ -82,8 +103,6 @@ nav li:hover {
     color: #808080;
 }
 
-.bus_135{ background-position: 0 0;  }
-.bus_143{ background-position: 0 -107px;  }
-.bus_144{ background-position: 0 -214px;  }
-.bus_145{ background-position: 0 -321px;  }
-.bus_n35{ background-position: 0 -428px;  }
+.bus_135 {
+    content: "135"
+}
