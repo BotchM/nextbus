@@ -1,7 +1,9 @@
 .group:after {
-  content: "";
-  display: table;
-  clear: both;
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
 }
 
 hr.soften {
