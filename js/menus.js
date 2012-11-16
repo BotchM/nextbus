@@ -1,4 +1,4 @@
-(function($) {
+(function() {
 
     ///////////// HELPERS
     var addEvent, addHoverEvent;
