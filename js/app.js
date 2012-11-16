@@ -99,7 +99,17 @@ var nextbus = (function($){
         }
     };
 
+    // templates
+    var renderBusIcon = function(busnumber) {
+        return templates.busicon.replace('__BUSNUMBER__', busnumber);
+    };
 
+    var renderBusItem = function(busnumber, includeHr) {
+        includeHr = includeHr || true;
+        var html = templates.busitem;
+        var hr = includeHr ? '<hr class="soften">' : '';
+        return html.replace('__BUSNUMBER__', busnumber).replace('__HR__', hr).replace('__SVGPLACEHOLDER__', renderBusIcon(busnumber));
+    };
 
 
 })(jQuery);
