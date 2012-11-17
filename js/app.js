@@ -1,3 +1,5 @@
+/*global EJS*/
+
 var nextbus = (function($){
 
 /*
