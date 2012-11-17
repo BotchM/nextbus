@@ -66,8 +66,9 @@ var nextbus = (function($){
     };
 
     var templates = {
-        busicon: document.getElementById('busicontmpl').innerHTML,
-        busitem: document.getElementById('busitemtmpl').innerHTML
+        busicon: document.getElementById('busicontmpl'),
+        busitem: document.getElementById('busitemtmpl'),
+        navitem: document.getElementById('navitemtmpl')
     };
 
     // settings
