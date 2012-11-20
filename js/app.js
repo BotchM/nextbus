@@ -65,12 +65,6 @@ var nextbus = (function($){
         save_stop_as_default: true
     };
 
-    var templates = {
-        busicon: document.getElementById('busicontmpl'),
-        busitem: document.getElementById('busitemtmpl'),
-        navitem: document.getElementById('navitemtmpl')
-    };
-
     // settings
     var loadSettings = function() {
         var settings = localStorage('settings') || {};
