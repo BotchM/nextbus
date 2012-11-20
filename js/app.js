@@ -89,7 +89,7 @@ var nextbus = (function($){
     };
 
     var setSetting = function(setting, value, save) {
-        save = save || true;
+        save = arguments.length === 2 ? true : save;
         settings[setting] = value;
         if (save) {
             saveSettings();
