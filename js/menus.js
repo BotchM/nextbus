@@ -1,5 +1,6 @@
 (function() {
 
+  // events happening when the window loaads
     ///////////// HELPERS
     var addEvent, addHoverEvent;
 
@@ -33,6 +34,7 @@
 
 
     ///////////// SERIOUS BUSINESS
+    // when mouse hovered over, it shows alphabets which on selection redirects to sfu directory
     var directoryAtabsEl = document.querySelectorAll('#directory a.tabs')[0];
     addHoverEvent(document.querySelectorAll('#directory')[0],
         function(ev) {
@@ -42,6 +44,7 @@
             directoryAtabsEl.style.borderBottom = 'none';
         }
     );
+    // when mouse hovered over, it shows links to different mailing services provided by sfu
 
     var onlineAtabsEl = document.querySelectorAll('#online a.tabs')[0];
     addHoverEvent(document.querySelectorAll('#online')[0],
@@ -53,6 +56,7 @@
         }
     );
 
+    // the links that were presented by the above function are rendered once a user perform a mouse click event
     if (!('placeholder' in document.createElement('input'))) {
         var searchEl = document.getElementById('s')
         ,   defaultValue = 'Search sfu.ca';
